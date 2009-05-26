@@ -1,6 +1,8 @@
 require File.dirname(__FILE__) + '/test_helper.rb'
 
 class TimeWarpTest < Test::Unit::TestCase
+  include TimeWarp
+  
   def test_test_unit_test_case_should_respond_to_pretend_now_is
     assert_equal true, self.respond_to?(:pretend_now_is)
   end
